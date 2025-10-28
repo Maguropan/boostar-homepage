@@ -56,7 +56,7 @@ nav{position:fixed;top:0;width:100%;padding:1rem 2rem;
 #contact{background:#210040;}
 
 /* ───────────────── Members ───────────────── */
-.members-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem;}
+.members-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:3rem;max-width:800px;margin-left:auto;margin-right:auto;}
 .member-card{background:rgba(255,255,255,.05);padding:2rem;border-radius:20px;
              border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(10px);text-align:center;transition:.3s;}
 .member-card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(78,205,196,.2);}
@@ -207,6 +207,9 @@ footer{background:#000;padding:2rem;text-align:center;margin-top:5rem;}
   .nav-links{display:none;} /* ハンバーガー未実装の場合は非表示 */
   .members-grid{grid-template-columns:1fr;}
 }
+@media(min-width:769px) and (max-width:1024px){
+  .members-grid{max-width:700px;}
+}
 </style>
 </head>
 
@@ -240,9 +243,11 @@ footer{background:#000;padding:2rem;text-align:center;margin-top:5rem;}
 <!-- About -->
 <section id="about" class="section">
  <h2>About Boostar</h2>
- <p style="text-align:center;font-size:1.2rem;line-height:1.8;opacity:.9;">
-   Boostarは、革新的なサウンドと心に響くメッセージで音楽シーンに新たな風を吹き込むバンドです。
-   ジャンルの枠を超えた音楽表現で、リスナーの心を高揚させ、日常に特別な瞬間をお届けします。
+ <p style="text-align:center;font-size:1.2rem;line-height:1.8;opacity:.9;max-width:800px;margin:0 auto;">
+   Boostarは、革新的なサウンドと心に響くメッセージで<br>
+   音楽シーンに新たな風を吹き込むバンドです。<br>
+   ジャンルの枠を超えた音楽表現で、リスナーの心を高揚させ、<br>
+   日常に特別な瞬間をお届けします。<br>
    私たちの音楽は、夢を追いかけるすべての人へのエールです。
  </p>
 </section>
@@ -270,7 +275,7 @@ footer{background:#000;padding:2rem;text-align:center;margin-top:5rem;}
      </div>
      <h3>BULL</h3>
      <p class="member-role">Vocals</p>
-     <p>情熱的な赤い牛。パワフルなボーカルと熱いパフォーマンスでバンドを牽引するフロントマン。</p>
+     <p>情熱的な赤い牛。<br>パワフルなボーカルと熱いパフォーマンスで<br>バンドを牽引するフロントマン。</p>
    </div>
    
    <!-- SPOTS - Guitar -->
@@ -300,7 +305,7 @@ footer{background:#000;padding:2rem;text-align:center;margin-top:5rem;}
      </div>
      <h3>SPOTS</h3>
      <p class="member-role">Guitar</p>
-     <p>知的なホルスタイン。メガネがトレードマークの音楽理論派。革新的なギターサウンドを生み出す。</p>
+     <p>知的なホルスタイン。<br>メガネがトレードマークの音楽理論派。<br>革新的なギターサウンドを生み出す。</p>
    </div>
    
    <!-- SHADOW - Bass -->
@@ -326,7 +331,7 @@ footer{background:#000;padding:2rem;text-align:center;margin-top:5rem;}
      </div>
      <h3>SHADOW</h3>
      <p class="member-role">Bass</p>
-     <p>ミステリアスな黒羊。重低音を操り、バンドの土台を支える影の実力者。クールな佇まいが魅力。</p>
+     <p>ミステリアスな黒羊。<br>重低音を操り、バンドの土台を支える影の実力者。<br>クールな佇まいが魅力。</p>
    </div>
    
    <!-- TIGER - Drums -->
@@ -352,7 +357,7 @@ footer{background:#000;padding:2rem;text-align:center;margin-top:5rem;}
      </div>
      <h3>TIGER</h3>
      <p class="member-role">Drums</p>
-     <p>野性的な雌虎。圧倒的なテクニックと破壊力でリズムを刻む。レザージャケットがトレードマーク。</p>
+     <p>野性的な雌虎。<br>圧倒的なテクニックと破壊力でリズムを刻む。<br>レザージャケットがトレードマーク。</p>
    </div>
  </div>
 </section>
